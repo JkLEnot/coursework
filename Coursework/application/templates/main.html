@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Coursework Ubuntu Server">
+    <meta name="author" content="Maxim Dorogavtsev">
+
+    <title>Ubuntu Server</title>
+    <link href="/static/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        body {
+            padding-bottom: 3rem;
+            color: snow;
+            background: #121212;
+        }
+
+        .carousel {
+            margin-bottom: 4rem;
+        }
+
+        .carousel-caption {
+            bottom: 3rem;
+            z-index: 10;
+        }
+
+        .carousel-item {
+            height: 35rem;
+        }
+
+        .carousel-item > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            height: 35rem;
+        }
+
+        .marketing .col-lg-4 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .marketing h2 {
+            font-weight: 400;
+        }
+
+        .marketing .col-lg-4 p {
+            margin-right: .75rem;
+            margin-left: .75rem;
+        }
+
+        .featurette-divider {
+            margin: 5rem 0;
+        }
+
+        .featurette-heading {
+            font-weight: 300;
+            line-height: 1;
+            /* rtl:remove */
+            letter-spacing: -.05rem;
+        }
+
+        @media (min-width: 40em) {
+            .carousel-caption p {
+                margin-bottom: 1.25rem;
+                font-size: 1.25rem;
+                line-height: 1.4;
+            }
+
+            .featurette-heading {
+                font-size: 50px;
+            }
+        }
+
+        @media (min-width: 62em) {
+            .featurette-heading {
+                margin-top: 7rem;
+            }
+        }
+
+        .main_pic{
+            width: 100%;
+            padding: 0;
+        }
+        .main_pic div{
+            margin-top:-6rem;
+        }
+        .main_pic img{
+            object-fit: cover;
+            width: 100%;
+            height: 444px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item main_pic active">
+                <img src="static/images/slider/1.jpg" style="height: 35rem" alt="...">
+<!--                <div class="container">-->
+<!--                    <div class="carousel-caption text-start">-->
+<!--                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+            <div class="carousel-item main_pic">
+                <img src="static/images/slider/2.jpg" style="height: 35rem" alt="...">
+<!--                <div class="container">-->
+<!--                    <div class="carousel-caption">-->
+<!--                        <h1>Title</h1>-->
+<!--                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+            <div class="carousel-item main_pic">
+                <img src="static/images/slider/3.jpg" style="height: 35rem" alt="...">
+<!--                <div class="container">-->
+<!--                    <div class="carousel-caption text-end">-->
+<!--                        <h1>Title</h1>-->
+<!--                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+    <div class="container marketing">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="static/images/2.png" style="height: 140px; width: 140px" alt="...">
+
+                <h2 style="margin-top: 1rem">Регулярные обновления безопасности</h2>
+                <p>Каждые шесть месяцев Ubuntu Server предоставляет обновления обслуживания, как и его настольный аналог. Он также предлагает стандартное окно обеспечения безопасности (SSM) на пять лет.</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="static/images/1.png" style="height: 140px; width: 140px" alt="...">
+
+                <h2 style="margin-top: 1rem">Масштабирование</h2>
+                <p>С сервером вы можете установить минимальную или стандартную установку. Более того, вы можете развернуть его на различных машинах, и он предлагает широкие возможности горизонтального масштабирования. Это означает, что вы адаптируете его к вашим потребностям по мере развития.</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+               <img src="static/images/3.png" style="height: 140px; width: 140px" alt="...">
+
+                <h2 style="margin-top: 1rem">Использование ресурсов</h2>
+                <p>Ubuntu в целом завоевал репутацию благодаря эффективному использованию ресурсов. К счастью, это качество распространяется и на Убунту сервер. Действительно, поскольку он отказывается от GUI, его аппаратные требования относительно скромны.</p>
+            </div><!-- /.col-lg-4 -->
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Шаг 1. Загрузка образа.</h2>
+                <p class="lead">В данном примере установка OS Ubuntu Server будет происходить через запись образа на флешку. Сначала нужно скачать установочный образ (ISO) и записать его на флешку. Скачать Ubuntu Server ISO вы можете на официальном сайте. На данный момент доступны версии 20.04.1 LTS и 20.10. Процесс установки для них мало отличается. Но первая - это стабильная версия и именно ее рекомендуется использовать для серверов.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="margin-top: 15%; background-size: cover;border-radius: 10%" src="static/images/download/step1.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Шаг 2. Запись на флешку.</h2>
+                <p class="lead">Для записи образа на флешку можно использовать утилиту UltraISO, для начала нажмите кнопку 'Файл' -> 'Открыть...' после чего откройте скаченный ISO файл. Далее нужно нажать на кнопку 'Самозагрузка' -> 'Записать образ Жесткого диска...', после нужно выбрать флешку на которую будет производиться запись, метод записи оставьте поу молчанию, и теперь нажмите 'Записать' -> 'Да', после чего начнется запись образа на флешку.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/step2.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Шаг 3. Настройка биоса.</h2>
+                <p class="lead">Я не буду описывать как настроить BIOS на загрузку с флешки, т.к все зависит от версии BIOS и производителя материнской платы. Просто перезагрузите компьютер, откройте меню BIOS и выставьте вашу флешку первой среди устройств загрузки.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/step3.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Шаг 4. Начало установки.</h2>
+                <p class="lead">После перезагрузки пк появится окно загрузки. Настоятельно рекомендуется иметь проводное подключение к Интернет на сервере, на котором вы будете устанавливать  «Ubuntu». Это позволит оперативно обновить программное обеспечение непосредственно в процессе инсталляции.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/2.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Шаг 5. Выбор языка.</h2>
+                <p class="lead">После не долгого запуска всех сервисов установочного образа должно появиться окно с меню выбора языка.</p>
+                <p class="lead">Можно выбрать любой из списка, но для установки серверной операционной системы лучше выбрать английский, так как в случае возникновения ошибки намного проще и быстрее будет найти её описание в англоязычном сегменте Интернета, но я все же выбрал русский язык. Выбрав требуемый язык в меню продолжите установку.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/3.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Шаг 6. Выбор языка раскладки клавиатуры.</h2>
+                <p class="lead">В ходе дальнейшей установки будет предложено выбрать раскладку клавиатуры.</p>
+                <p class="lead">Поскольку мы устанавливаем серверную операционную систему и работать в основном мы будем в консольном режиме, выберем английский язык по умолчанию. Подтверждаем, выбрав пункт меню «Готово», и продолжаем.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/4.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Шаг 7. Настройка сети.</h2>
+                <p class="lead">Далее будет предложено настроить сетевые подключения. В данном конкретном случае интерфейс автоматически подхватил IP-адрес с DHCP-сервера (10.0.2.15/24)</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/5.png" />
+            </div>
+        </div>
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading"></h2>
+                <p class="lead">Выбрав требуемый сетевой интерфейс, можно настроить его вручную, задать статический IP-адрес для IPv4 или IPv6, создать VLAN или просто посмотреть детальную информацию о текущем состоянии подключения.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/6.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Шаг 8. Настройка прокси.</h2>
+                <p class="lead">В ходе дальнейшей установки будет предложено указать прокси-сервер на тот случай, если сервер, где производится разворачивание «Ubuntu», не имеет прямого подключения к Интернету либо существуют ограничения на доступ к репозиториям «Canonical», устранить которые можно только с помощью внешнего прокси.</p>
+                <p class="lead">В данном случае этот режим нам не нужен. Подтверждаем, выбрав пункт меню «Готово» и оставив поле «Адрес прокси-сервера» пустым.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/7.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Шаг 9. Выбор зеркала.</h2>
+                <p class="lead">Серверы репозиториев — зеркала с установочными пакетами Ubuntu, расположенные по всему миру (список можно посмотреть на официальном сайте). Установщик сам определяет наиболее близко расположенное к нему зеркало для обеспечения лучшей скорости и стабильности скачивания необходимых компонентов. Однако иногда стоит указать URL-адрес зеркала вручную, заполнив поле «Mirror address».</p>
+                <p class="lead">В нашем случае оставляем без изменений. Продолжаем, выбрав пункт меню «Готово».</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/8.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Шаг 10. Настройка дисков.</h2>
+                <p class="lead">Самый простой способ разметки диска, подходящий новичкам — предоставление установщику всего диска в распоряжение по умолчанию (Use an entire disk), но даже если вы выберите его, во время разметки можно сбросить настройки.</p>
+                <p class="lead">Однако лучше всего это всё сделать вручную, так мы будем контролировать процесс и сможем более рационально использовать дисковое пространство.</p>
+                <p class="lead">Отмечаем клавишей «Пробел» флажок «Custom storage layout» и подтверждаем, выбрав пункт меню «Готово».</p>
+
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/9.png" />
+            </div>
+        </div>
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading"></h2>
+               <p class="lead">Выбираем из списка «AVAILABLE DEVICES» диск, который будем использовать.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/11.png" />
+            </div>
+        </div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading"></h2>
+                <p class="lead">В контекстном меню выбираем пункт Add GPT Partition.</p>
+                <p class="lead">Для начала создадим SWAP-раздел, выполняющий ту же роль, что и файл подкачки в «Windows». Обычно задают размер, вдвое больший объем оперативной памяти компьютера. Размер указывается в гигабайтах. В нашем случае ОЗУ — 4 Гб, соответственно, «SWAP» будет 8 Гб.</p>
+
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/12.png" />
+            </div>
+        </div>
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading"></h2>
+                <p class="lead">Для начала создадим SWAP-раздел, выполняющий ту же роль, что и файл подкачки в «Windows». Обычно задают размер, вдвое больший объем оперативной памяти компьютера. Размер указывается в гигабайтах. В нашем случае ОЗУ — 4 Гб, соответственно, «SWAP» будет 8 Гб.</p>
+                <p class="lead">Указываем выбранный размер в поле «Size». В раскрывающемся списке «Формат» выбираем тип  «swap » и далее выбираем пункт меню «Создать».</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/13.png" />
+            </div>
+        </div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading"></h2>
+               <p class="lead">Продолжая разметку, повторим действия с выбором диска. По умолчанию будет предложена точка монтирования, распространяемая на весь корневой раздел /.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/14.png" />
+            </div>
+        </div>
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading"></h2>
+                <p class="lead">Как видим, у нас готовы для создания SWAP-раздел и том с используемой для него файловой системой Ext4 и точкой монтирования /. Выбираем пункт меню «Готово».</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/15.png" />
+            </div>
+        </div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading"></h2>
+                <p class="lead">«Внимание! Производимые изменения на диске, на который устанавливается Ubuntu 20.04 LTS Server (Focal Fossa), станут необратимыми, вся информация на нём будет затерта.»</p>
+                <p class="lead">Продолжаем установку, выбираем пункт меню «Продолжить».</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/16.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Шаг 11. Создание пользователя и настройка имени сервера.</h2>
+                <p class="lead">В следующем окне установщика необходимо указать имя пользователя в поле «Ваше имя», имя сервера в поле «Your server’s name», логин для входа в систему в поле «Введите имя пользователя» и дважды ввести пароль учётной записи в поля «Задайте пароль» и «Повторите пароль».</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/17.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Шаг 12. Установка OPENSSH-Сервера.</h2>
+                <p class="lead">Для удалённого управления сервером Linux используется специальный защищённый SSH-протокол (Secure Shell).</p>
+                <p class="lead">Если вы не планируете все операции по настройке сервера делать локально, настоятельно рекомендуем установить OpenSSH. Отмечаем клавишей «Пробел» флажок «Install OpenSSH Server».</p>
+                <p class="lead">Опционально в этом же окне для авторизации по протоколу SSH можно добавить SSL-ключи. Однако пока оставим всё по умолчанию, ключи можно создать или импортировать после установки.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/18.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Шаг 13. Выбор и установка приложений.</h2>
+                <p class="lead">В следующем окне можно сразу же установить популярные серверные окружения и приложения: «Docker», «Kubernetes», различного рода «бенчмарки» или инструменты для взаимодействия с облачными провайдерами («aws-cli», «google-cloud-sdk» и др.).</p>
+                <p class="lead">Пока не будем устанавливать,. при необходимости это можно сделать после. Для продолжения выбираем пункт меню «Готово».</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/19.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Шаг 14. Установка системы.</h2>
+                <p class="lead">В следующем окне мы будем наблюдать за процессом установки ОС и выбранных нами пакетов программ.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/20.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Шаг 15. Завершение установки.</h2>
+                <p class="lead">После того, как ОС и все пакеты будут проинсталлированный, появится окно с сообщением «Installation Complete!».</p>
+                <p class="lead">Выбираем пункт меню «Перезагрузить сейчас» для выполнения перезагрузки компьютера, параллельно извлекаем носитель с дистрибутивом «Ubuntu 20.04 LTS Server».</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/21.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Шаг 16. Вход в систему.</h2>
+                <p class="lead">После перезагрузки системы нас попросит авторизоваться с созданной прежде учетной записи.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/22.png" />
+            </div>
+        </div>
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading"></h2>
+                <p class="lead">После авторизации откроется стандартная консоль «Linux-сервера».</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/23.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Шаг 17. Первая команда.</h2>
+                <p class="lead">После увлекательного процесса установки «Ubuntu Server» вы можете ввести свою первую команду lsb_release -a, например проверить версию «Ubuntu Server».</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style=" background-size: cover;border-radius: 10%" src="static/images/download/24.png" />
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+    </div>
+
+    <footer class="container">
+        <p>&copy; 2021 Maxim Dorogavtsev</p>
+    </footer>
+</main>
+
+<script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
